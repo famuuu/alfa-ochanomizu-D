@@ -216,13 +216,18 @@ button {
   padding: 35px 30px;
 }
 
-.youtube {
-  position: relative;
+.img_container {
   width: 100%;
-  padding-top: 56.25%;
 }
 
-.youtube iframe {
+.video_wrapper {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  height: 0;
+}
+
+.video_wrapper > video {
   position: absolute;
   top: 0;
   left: 0;
@@ -230,10 +235,6 @@ button {
   height: 100%;
 }
 
-.youtube__container {
-  max-width: 800px;
-  margin: 0 auto;
-}
 
 /*********************
 * Color
