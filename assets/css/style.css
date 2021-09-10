@@ -227,7 +227,7 @@ button {
   height: 0;
 }
 
-.video_wrapper > video {
+.video_wrapper video {
   position: absolute;
   top: 0;
   left: 0;
