@@ -28,6 +28,13 @@ body {
   margin: 0;
 }
 
+hr{
+  margin-top: 25px;
+	color: #48458D;
+	overflow: visible;
+	text-align: center;
+}
+
 img {
   width: 100%;
 }
