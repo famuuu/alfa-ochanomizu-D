@@ -284,6 +284,7 @@ button {
   padding: 9px 20px;
   background-color: #7EA7BE;
   margin: 0 -20px 20px -20px;
+  color: #fff;
 }
 
 .section-title__stage {
@@ -306,7 +307,6 @@ button {
 .section-title--story {
   width: 330px;
   margin: 0 auto 20px;
-  color: #fff;
 }
 
 .section-title--border {
