@@ -26,7 +26,6 @@ body {
   list-style: none;
   color: #000;
   margin: 0;
-  background-color: #AFEEEE;
 }
 
 hr{
@@ -256,7 +255,7 @@ button {
 }
 
 .bg-color--gray {
-  background-color: #99CCCC;
+  background-color: #99CCFF;
 }
 
 /*********************
