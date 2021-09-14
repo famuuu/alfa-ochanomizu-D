@@ -465,7 +465,7 @@ button {
 }
 
 .clear-message {
-  background-color: #7EA7BE;
+  background-color: #fff;
   padding: 30px 30px 60px;
   position: relative;
 }
@@ -474,7 +474,7 @@ button {
   position: relative;
   display: block;
   text-align: center;
-  color: #fff;
+  color: #48458D;
   font-size: 30px;
   padding-bottom: 10px;
   margin-bottom: 35px;
