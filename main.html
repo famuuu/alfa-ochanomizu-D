@@ -220,6 +220,8 @@
             <div class="img_container">
               <img src="assets/images/st3-paper.png" alt="">
             </div>  
+          </div>
+        </section>
         <section v-if="clear['stage3']" v-bind:class="{isClear:clear['stage3']}"  class="section section--clear bg-color--gray">
           <div class="container">
             <div class="clear-message">
@@ -228,8 +230,6 @@
                 先へ進んでマグロ怪人を倒そう！</div>
                 <button v-on:click="nextStage('stage3')" onclick="location.href='#sectionStage3'" class="clear-message__btn btn">次のステージへ<svg class="btn__arrow"><use xlink:href="#arrow"></use></svg></button>
             </div>
-          </div>
-        </section>
           </div>
         </section>
         <!-- STAGE3-1問題セクション　ここまで -->
