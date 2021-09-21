@@ -504,15 +504,17 @@ button {
   margin: 0;
 }
 
+.maguro {
+ color: #48458D;
+ font-size: 30px;
+
 /********************
 * Utility
 ********************/
 .text-center {
   text-align: center;
 }
-.maguro {
- color: #48458D;
- font-size: 30px;
+
 
 .text-left {
   text-align: left;
