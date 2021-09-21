@@ -504,10 +504,7 @@ button {
   margin: 0;
 }
 
-.maguro {
- color: #48458D;
- font-size: 30px;
-}
+
 
 /********************
 * Utility
@@ -528,4 +525,11 @@ button {
 .hidden {
   display: none;
 }
+
+.maguro {
+ color: #48458D;
+ font-size: 30px;
+}
+
+
 /*# sourceMappingURL=style.css.map */
