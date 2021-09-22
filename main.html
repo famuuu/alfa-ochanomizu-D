@@ -176,22 +176,39 @@
         </section>
       <!-- STAGE2クリア画面　ここまで -->
 
-      </div>
-    <!-- STAGE2　ここまで -->
+      <!-- STAGE3　ここから -->
+      <div v-if="next['stage2']" id="sectionStage3" class="stage">
 
-    <!-- STAGE3　ここから -->
-    <div v-if="next['stage2']" id="sectionStage3" class="stage">
-
-      <!-- STAGE3-1問題セクション　ここから -->
-      <section class="section">
-        <div class="container">
-          <h2 class="section-title section-title--keycolorlight"><span class="section-title__stage">ステージ
-              3</span>マグロ怪人の弱点？</h2>
-          <p class="text-center">カッカッカッ... 地下に繋がる扉を降りたら、なんとマグロ怪人のアジトに繋がった！</p>
-          <div class="video_wrapper">
-            <video controls poster="assets/images/st1-video-thumbnail.png" preload="metadata">
-              <source src="assets/images/st1-video.mp4" type="video/mp4">
-            </video>
+        <!-- STAGE3-1問題セクション　ここから -->
+        <section class="section">
+          <div class="container">
+            <h2 class="section-title section-title--keycolorlight"><span class="section-title__stage">ステージ 3</span>マグロ怪人の弱点？</h2>
+            <p class="text-center">カッカッカッ... 地下に繋がる扉を降りたら、なんとマグロ怪人のアジトに繋がった！</p>
+            <div class="video_wrapper">
+              <video controls poster="assets/images/st1-video-thumbnail.png" preload="metadata">
+                <source src="assets/images/st1-video.mp4" type="video/mp4">
+              </video>
+            </div>
+            <hr>
+            <p class="text-center">「ヒーローさん、これを！」そう言って渡された1枚の紙。<br>
+              『魚の単語を消して！』<br>
+              一体どのような意味が込められているのか？！謎を解いて、考えてみよう...</p>
+            
+            <p1 class="text-center">たて、よこ、ななめで魚の名前を消せ！</p1>
+ 
+            
+            <hr>
+            
+             <canvas
+    id="draw-area"
+    width="1000px"
+    height="700px"
+    style="border: 1px solid #000000;"></canvas>
+  <div>
+    <button class="btn" id="clear-button">全消し</button>
+  </div>
+  <script src="./main.js"></script>
+            
           </div>
           <hr>
           <p class="text-center">「ヒーローさん、これを！」そう言って渡された1枚の紙。<br>
