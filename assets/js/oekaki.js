@@ -1,11 +1,13 @@
-window.addEventListener('load', () => {
-  const canvas = document.querySelector('#draw-area');
+function oekakiAwake(){
+  const canvas = document.getElementById('draw-area');
   // contextを使ってcanvasに絵を書いていく
-  const context = canvas.getContext('2d');
+  const context = canvas.getContext("2d");
 
   // 直前のマウスのcanvas上のx座標とy座標を記録する
   const lastPosition = { x: null, y: null };
 
+  showBG();
+  
   // マウスがドラッグされているか(クリックされたままか)判断するためのフラグ
   let isDrag = false;
 
@@ -13,7 +15,7 @@ window.addEventListener('load', () => {
   function draw(x, y) {
     // マウスがドラッグされていなかったら処理を中断する。
     // ドラッグしながらしか絵を書くことが出来ない。
-    if(!isDrag) {
+    if (!isDrag) {
       return;
     }
 
@@ -56,6 +58,19 @@ window.addEventListener('load', () => {
   // canvas上に書いた絵を全部消す
   function clear() {
     context.clearRect(0, 0, canvas.width, canvas.height);
+    showBG();
+  }
+
+  function showBG() {
+    //書き足し
+    const background = new Image();
+    background.src = "assets/images/st3-paper.png";
+
+    const canvas_width = 900;
+    const canvas_height = 450;
+    background.onload = function () {
+      context.drawImage(background, 0, 0, canvas_width, background.height * canvas_width / background.width);
+    }
   }
 
   // マウスのドラッグを開始したらisDragのフラグをtrueにしてdraw関数内で
@@ -98,4 +113,4 @@ window.addEventListener('load', () => {
 
   // イベント処理を初期化する
   initEventHandler();
-});
+};
