@@ -27,7 +27,7 @@ function oekakiAwake(){
     context.lineCap = 'round'; // 丸みを帯びた線にする
     context.lineJoin = 'round'; // 丸みを帯びた線にする
     context.lineWidth = 5; // 線の太さ
-    context.strokeStyle = 'black'; // 線の色
+    context.strokeStyle = 'red'; // 線の色
 
     // 書き始めは lastPosition.x, lastPosition.y の値はnullとなっているため、
     // クリックしたところを開始点としている。
